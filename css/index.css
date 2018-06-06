@@ -1,0 +1,263 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 50px !important;
+	font-family: "微软雅黑";
+	max-width: 600px;
+	margin:0 auto;
+}
+body{
+	position: relative;
+}
+.color_yellow{
+	color:#FFEB00;
+}
+header{
+	width: 100%;
+	position: relative;
+}
+header .end_time{
+	position: absolute;
+	bottom: 4%;
+	left: 2%;
+	width: 95%;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-around;
+	background: #2889D3;
+	font-size: 0.3rem;
+	line-height: 40px;
+	color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 8px 3px rgba(9,91,127,.35) inset,0px 0px 8px .5px rgba(162,229,255,.3);
+}
+.nail{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background:#2889d3;
+	box-shadow: 0px 0px 8px 2px  rgba(9,91,127,.35);
+	border:1px solid rgba(52,159,228,0.5);
+	margin-top: 15px;
+}
+header img{
+	width: 100%;
+	display: block;
+}
+.turntable{
+	width: 100%;
+	/*background: #2B89D4;*/
+	background: -webkit-linear-gradient(#3093D7 15%, #2B89D4 85%); 
+	position: relative;
+	margin-top: -1px;
+	padding-bottom: 15px;
+}
+
+.turntable .grid_turntable{
+	width: 310px;
+	margin:0 auto;
+	position: relative;
+}
+.Mirror{
+	width: 98%;                        
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	z-index: 10;
+}
+.turntable .grid_turntable .turntable_Prize{
+	width: 88%;
+    height: 88%;
+    position: absolute;
+	top:5%;
+	left:6%;
+	border-radius: 50%;
+	overflow: hidden;
+	transform: rotate(0deg);
+}
+.add_transition{
+	transition:transform 4s ease-in-out;
+	-moz-transition:transform 4s ease-in-out; /* Firefox 4 */
+	-webkit-transition:transform 4s ease-in-out; /* Safari and Chrome */	
+}
+.turntable .grid_turntable .turntable_click{
+	width: 110px;
+	position: absolute;
+	left: 97px;    /*sadas*/
+ 	top: 97.205px;
+	/*margin-top: -13.5%;            /*asdas*/*/
+	margin-left: -12.5%;
+	z-index: 11;
+	cursor: pointer;
+}
+.turntable .grid_turntable .times{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 51%;
+	z-index: 11;
+	font-size: 0.15rem;
+	color: RGB(244,217,165);
+	text-shadow: 0.01rem 0 0.01rem #AB1404;
+	padding-top: 5px;
+	padding-right: 5px;
+}
+.rule{
+	width: 100%;
+	background: #2D99E2;
+	position: relative;
+	font-size: 0.05rem;
+	margin-top: -1px;
+}
+.rule img{
+	width: 100%;
+	display: block;
+	position: absolute;
+}
+.rule .rule_grid{
+	width: 91%;
+	margin: 0 auto;
+	background:#FFE1BC ;
+	border-radius: 10px;
+	padding-bottom: 10px;
+}
+.rule .rule_content{
+	width: 94%;
+	margin: 0 auto;
+	background: #D89766;
+	border-radius: 10px;
+	padding-top: 35%;
+	padding-bottom: 5%;
+	font-size: 0.25rem;
+}
+.rule .rule_content p{
+	padding:2px 8px;
+}
+#svg{
+	position: absolute;*
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+}
+.technology{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size:0.05rem;
+	background: #2D99E2;
+	color: #116CAA;
+	margin-top: -1px;
+}
+.drag{
+	width: 100%;
+	height: 100vh;
+	background: #000;
+	opacity: 0.4;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 99;
+	display: none;
+}
+.eject_box{
+	width:84%;
+	position: absolute;
+	left:8%;
+	z-index: 100;
+	display: none;
+}
+#close{
+	position: absolute;
+	top: 0;
+	right: 10%;
+	font-size: 0.5rem;
+	color: #fff;
+	cursor: pointer;
+}
+#close:hover{
+	transform: rotate(90deg);
+	transition:transform .2s ease-in-out;
+}
+.determine{
+	width: 100%;
+	text-align: center;
+	font-size: 0.3rem;
+	color: #fff;
+	position: absolute;
+	top: 86.5%;
+	z-index: 120;
+}
+
+.result{
+	width: 100%;
+}
+.congratulate{
+	width: 100%;
+	text-align: center;
+	font-size: 0.33rem;
+	color: #EF403E;
+	position: absolute;
+	top: 33%;
+}
+.eject_pic{
+	width: 20%;
+	position: absolute;
+	top: 42%;
+	left: calc( (100% - 20%)/2 );
+}
+.eject_aquire{
+	width: 100%;
+	position: absolute;
+	top: 65%;
+	font-size: 0.3rem;
+	text-align: center;
+}
+.again_eject{
+	width: 100%;
+	position: absolute;
+	top: 65%;
+	font-size: 0.3rem;
+	text-align: center;
+	display: none;
+	color: #EF403E;
+
+}
+.again_eject span{
+	padding: 5px 10px;
+	border: 2px solid #EF403E;
+}
+.eject_name{
+	color: #EF403E;
+}
+
+text,image{   
+    text-anchor: middle;   
+}   
+
+@media only screen and (min-width: 400px){
+    html,body {
+        font-size: 63px !important;
+    }
+}
+@media only screen and (min-width: 480px){
+    html,body {
+        font-size: 75px !important; 
+    }
+}
+@media only screen and (min-width: 540px){
+    html,body {
+        font-size: 84px !important; 
+    }
+}
+@media only screen and (min-width: 600px){
+    html,body {
+        font-size: 70px !important; 
+    }
+    /*.determine{
+    		
+    }*/
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=no">
+<title>抽奖页面</title>
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/index.css">
+<script src="http://lib.baomitu.com/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery-mockjax/1.6.2/jquery.mockjax.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<header>
+		<img src="images/lADPBbCc1WT1oFvNAifNAu4_750_551.jpg" alt="加载失败" />
+		<div class="end_time">
+			<span class="nail"> </span>
+			<span>距离活动结束还有：<span class="day color_yellow"><b> 15 </b></span>天<span class="hour color_yellow"><b> 23 </b></span>小时<span class="minute color_yellow"><b> 59 </b></span>分<span class="second color_yellow"><b> 59 </b></span>秒</span>
+			<span class="nail"> </span>
+		</div>
+	</header>
+	<div class="turntable">
+		<div class="grid_turntable">
+			<img src="images/turntable_bk.png" class="Mirror" alt="加载失败" />
+			<div class="turntable_Prize"></div>
+			<img src="images/turntable_click.png" alt="加载失败" class="turntable_click" />
+			<p class="times"><b>您还有<span class="times_num"> 2 </span>次</b></p>
+		</div>
+	</div>
+	<div class="rule">
+		<img src="images/lALPBbCc1WT8TWHM3M0C7g_750_220.png" alt="加载失败" />
+		<div class="rule_grid">
+			<div class="rule_content">
+				<p>1.啊实打实萨达撒按时打算打算打算萨达阿萨德阿萨德按时打算啊</p>
+				<p>1.啊实打实萨达撒按时打算打算打算萨达阿萨德的大所多阿萨德阿萨德按时打算啊</p>
+				<p>1.啊实打实萨达撒按时打算打算打算萨大叔大婶多撒大所大所大所大所大达阿萨德阿萨德按时打算啊</p>
+			</div>
+		</div>
+	</div>
+	<div class="technology">
+		本投票由 <i> 有投票 </i> 提供技术支持
+	</div>
+	<div class="eject_box">
+		<img alt="加载失败"  class="result"/>
+		<p class="congratulate"><b>恭喜您!</b></p>
+		<img class="eject_pic" />
+		<p class="eject_aquire">获得<span class="eject_name">奖品奖品</span></p>
+		<p class="again_eject"><span>再抽一次</span></p>
+		<a href=""><p class="determine"><b>我的奖品 ></b></p></a>
+		<span class="glyphicon glyphicon-remove-circle" id="close"></span>
+	</div>
+	<div class="drag"></div>
+	<script type="text/javascript">
+			var configs={										
+				end_time:'432000', 						//结束时间
+				font_cl:['#fff','#FA3D3E','#C1C1C1'],
+				items:[{"id":"a1", "title":"手机","img":"images/turntable_click.png"},{"id":"a2","title":"音响","img":"images/turntable_click.png"},
+					   {"id":"a1", "title":"手机","img":"images/turntable_click.png"},{"id":"a1", "title":"手机","img":"images/turntable_click.png"},
+					   {"id":"a1", "title":"手机","img":"images/turntable_click.png"},{"id":"a1", "title":"手机","img":"images/turntable_click.png"},
+					   {"id":"a1", "title":"手机","img":"images/turntable_click.png"},{"id":"a1", "title":"手机","img":"images/turntable_click.png"},
+					   {"id":"a1", "title":"手机","img":"images/turntable_click.png"},{"id":"a1", "title":"手机","img":"images/turntable_click.png"},
+					   {"id":"a1", "title":"手机","img":"images/turntable_click.png"},{"id":"a1", "title":"手机","img":"images/turntable_click.png"},
+					   {"id":"a1", "title":"手机","img":"images/turntable_click.png"},{"id":"a1", "title":"谢谢惠顾","img":"images/turntable_click.png"},
+					  ],
+				flag:true,     //防止重复点击
+				deg_times:5,  //不清零的情况下   需要每次累加圈数
+//				times:3       //还可以点击的次数
+			};
+	</script>
+</body>
+</html>
